@@ -13,7 +13,7 @@ function login() {
   const u = document.getElementById("usuario").value.trim();
   const c = document.getElementById("clave").value.trim();
   const msg = document.getElementById("login-msg");
-  if (u === "admin" && c === "1234") {           // login de demostracion
+  if (u === "admin" && c === "1111") {           // login de demostracion
     document.getElementById("login").classList.add("oculto");
     document.getElementById("admin").classList.remove("oculto");
     msg.textContent = "";
