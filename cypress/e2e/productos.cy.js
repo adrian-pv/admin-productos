@@ -22,7 +22,7 @@ describe("Productos", () => {
     cy.get("#btn-guardar").click()
 
     // Ahora hay 6 filas y la nueva tiene los datos correctos
-    cy.get(".fila-producto").should("have.length", 7)
+    cy.get(".fila-producto").should("have.length", 6)
     cy.get(".fila-producto").last().within(() => {
       cy.get(".col-nombre").should("have.text", "Laptop")
       cy.contains("td", "Q5000")
